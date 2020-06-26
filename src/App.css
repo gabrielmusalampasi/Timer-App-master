@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #0e2430;
+  font-size: 1.4rem;
+  background-color: #dddddd;
+}
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+span {
+  padding: 0.5rem;
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.boxed--view {
+  background: white;
+  width: 25vw;
+  padding: 2.5rem;
+}
+
+.boxed--view__box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button {
+  color: white;
+  background: #f5b349;
+  width: 101%;
+  height: 4rem;
+  text-transform: uppercase;
+  border: 0.1rem solid #0e2430;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  transition: background 0.3s ease-in, color 0.3s ease-in;
+  outline: none;
+}
+.button:hover,
+.button:active {
+  color: #f5b349;
+  background: white;
+  border: 0.2rem solid #f5b349;
+}
+.button__outline {
+  color: #f5b349;
+  background: white;
+  width: 95%;
+  height: 3.5rem;
+  text-transform: uppercase;
+  border: 0.2rem solid #f5b349;
+  font-weight: 600;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in, color 0.3s ease-in;
+  outline: none;
+}
+.button__outline:hover,
+.button__outline:active {
+  color: white;
+  background: #f5b349;
+  border: 0.3rem solid #f5b349;
+}
+.timer--box {
+  border: 0.1rem solid #0e2430;
+  border-bottom: none;
+  border-radius: 0.55rem;
+  width: 95%;
+  height: 15rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.timer--content {
+  padding: 1rem;
+  /* flex-grow: 3; */
+  width: 88%;
+}
+.timer--header {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  text-align: left;
+}
+.timer--meta {
+  color: #aaaaaa;
+  text-align: left;
+  font-size: 1.2rem;
+}
+.timer--h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+}
+.actions {
+  text-align: right;
+}
+.trash,
+.edit {
+  transition: color 0.3s ease-in;
+}
+.trash:hover {
+  color: #fc3a51;
+  cursor: pointer;
+  font-weight: bold;
+}
+.edit:hover {
+  color: #f5b349;
+  cursor: pointer;
+  font-weight: bold;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.1rem solid #0e2430;
+  border-bottom: none;
+  border-radius: 0.55rem;
+  width: 95%;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+}
+.form--content {
+  padding: 1rem;
+  /* flex-grow: 3; */
+  width: 80%;
+}
+.form--item {
+  display: flex;
+  flex-direction: column;
+}
+.form--item > label {
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 0.8rem;
+}
+.form--item > input {
+  padding: 0.8rem;
+  border: 0.1rem solid #cccccc;
+  border-radius: 0.55rem;
+  margin-bottom: 0.8rem;
+}
+.form--item > input:focus {
+  outline: none;
+}
+.form--button {
+  width: 101%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.btn--cancel {
+  width: 50%;
+  height: 3.5rem;
+  font-size: 1.3rem;
+  background: white;
+  color: #fc3a51;
+  transition: color 0.3s ease-in, background 0.3s ease-in,
+    border-color 0.3s ease-in;
+  border-color: rgb(199, 48, 66);
+  border-bottom-left-radius: 0rem;
+}
+.btn--cancel:hover,
+.btn--cancel:active {
+  color: white;
+  background: #fc3a51;
+  border-color: rgb(199, 48, 66);
+}
+.btn--submit {
+  width: 50%;
+  height: 3.5rem;
+  font-size: 1.3rem;
+  border-bottom-right-radius: 0rem;
+  color: #f5b349;
+  background: white;
+  border-color: rgb(207, 151, 61);
+  transition: color 0.3s ease-in, background 0.3s ease-in,
+    border-color 0.3s ease-in;
+}
+.btn--submit:hover,
+.btn--submit:active {
+  color: white;
+  background: #f5b349;
+  border-color: rgb(207, 151, 61);
+}
+.list--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.red {
+  background: #fc3a51;
+  transition: color 0.3s ease-in, background 0.3s ease-in;
+}
+.red:hover,
+.red:active {
+  color: #fc3a51;
+  background: white;
+  border-color: #fc3a51;
+}
